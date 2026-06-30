@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --exampla-gratis: #000;
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / 200px 1fr auto;
+    height: 100vh;
+}
+
+
+.ptop,
+.pbot {
+    grid-column: 1 / 4;
+    background-color: red;
+}
+
+.lbar {
+    grid-column: 1 / 2;
+    background-color: blue;
+}
+
+.rbar {
+    grid-column: 3 / 4;
+    background-color: green;
+}
+
+.mcont {
+    grid-column: 2 / 3;
+    background-color: orange;
+    padding: 1rem;
+}
+
+.lbar,
+.rbar{
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.ptop {
+    padding: 1rem;
+}
+
+.pbot {
+    padding: 1rem;
+}
