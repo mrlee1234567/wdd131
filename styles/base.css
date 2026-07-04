@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headings1: "Smokum", "High Tower Text", serif;
+    --headings2: "Manufacturing Consent", "Old English Text MT", cursive, serif;
+    --body1: "Bell MT", "Goudy Bookletter 1911", serif;
+    --body2: 'Calibri', Helvetica, sans-serif;
+    --primary_font_color: black;
+    --secondary_font_color: floralwhite;
+    --primary_higlight_color: cadetblue;
+    --secondary_highlight_color: midnightblue;
+    /* eigengrau: #16161d */
+    --accent1: rebeccapurple;
+    --accent2: tomato;
+    --accent3: #4a412a;
+    /* the signature pantone 448c */
+    --fontspecial: "Special Elite", "Lucida Sans Typewriter Regular", monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary_highlight_color);
+    padding: 0.5rem;
+    border: 2px solid var(--primary_higlight_color);
+}
+
+nav a {
+    /* flex: 1 1 auto; */
+    font-family: var(--fontspecial);
+    color: var(--secondary_font_color);
+    background-color: var(--accent1);
+    text-decoration: none;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    border: 2px solid var(--primary_higlight_color);
+}
+
+nav a:hover {
+    text-decoration: dashed underline;
+    background-color: var(--accent2);
+    border-color: var(--accent1);
+}
+
+header span {
+    align-self: center;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-family: var(--headings1);
+    font-size: 3rem;
+    color: var(--primary_font_color);
+    background-color: var(--primary_higlight_color);
+    text-align: center;
+}
+
+body {
+    font-family: var(--body1);
+    background-color: var(--secondary_highlight_color);
+    color: var(--secondary_font_color);
+}
+
+main {
+    display: block;
+    width: 70rem;
+    justify-self: center;
+    border: 1px dotted var(--accent3);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card h2 {
+    grid-column: 1 / 3;
+}
+
+.card img {
+    justify-self: center;
+    display: block;
+    height: 450px;
+    width: auto;
+}
+
+figure {
+    display: block;
+    justify-content: center;
+}
+
+.card figure img {
+    display: block;
+    width: 400px;
+    height: auto;
+    justify-self: center;
+}
+
+figcaption {
+    font-family: var(--body2);
+    text-align: center;
+    color: var(--accent2);
+}
+
+h2 {
+    font-family: var(--headings2);
+    font-size: 2rem;
+    color: var(--primary_font_color);
+    background-color: var(--primary_higlight_color);
+    text-align: center;
+    margin: 5px 0;
+    border: 3px solid var(--accent1);
+}
+
+footer {
+    border-top: 2px solid var(--accent3);
+}
+
+footer p {
+    display: block;
+    /* justify-self: center; */
+    background-color: var(--accent2);
+    color: var(--accent3);
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+}
