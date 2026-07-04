@@ -9,7 +9,7 @@
     --headings2: "Manufacturing Consent", "Old English Text MT", cursive, serif;
     --body1: "Bell MT", "Goudy Bookletter 1911", serif;
     --body2: 'Calibri', Helvetica, sans-serif;
-    --primary_font_color: black;
+    --primary_font_color: #16161d;
     --secondary_font_color: floralwhite;
     --primary_higlight_color: cadetblue;
     --secondary_highlight_color: midnightblue;
@@ -46,12 +46,15 @@ nav a:hover {
     border-color: var(--accent1);
 }
 
+header {
+    font-size: 1.25rem;
+    align-items: center;
+}
+
 header span {
-    align-self: center;
     display: block;
     text-align: center;
     margin: 5px;
-    font-size: 1.25rem;
 }
 
 h1 {
@@ -127,7 +130,7 @@ footer p {
     display: block;
     /* justify-self: center; */
     background-color: var(--accent2);
-    color: var(--accent3);
+    color: var(--accent1);
     text-align: center;
     font-weight: 700;
     padding: 5px;
