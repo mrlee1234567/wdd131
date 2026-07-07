@@ -1,0 +1,11 @@
+@media screen and (min-width: 500px) {
+    /* for whatever reason, neither browser of mine (edge that comes default with windows and chrome that i sadly use) get small enough to activate this, but changing it to 600 demonstrates that it works */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

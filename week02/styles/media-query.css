@@ -1,0 +1,25 @@
+
+
+body {
+    font-family: "Roboto", "Comic Sans MS", cursive;
+    /* ^^^ comic sans and cursive are the fallback so that in the event of a failure you will beyond a shadow of a doubt know that there was an error */
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px dotted #0004;
+    background-color: aquamarine;
+    padding: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    grid-gap: 1rem;
+}
+
+section {
+    background-color: aliceblue;
+}
