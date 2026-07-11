@@ -3,6 +3,10 @@
 /* requirements 1, 2, and 3 are already covered by base.css */
 :root {
     --base-headings2: "Manufacturing Consent", "Old English Text MT", cursive, serif;
+    --accent1: rebeccapurple;
+    --accent2: tomato;
+    --accent3: #4a412a;
+    --secondary_font_color: floralwhite;
 }
 
 
@@ -71,3 +75,24 @@ figure {
 /* .show nav {
     display: block;
 } */
+
+nav {
+    display: flex;
+}
+
+nav a {
+    /* flex: 1 1 auto; */
+    font-family: var(--fontspecial);
+    color: var(--secondary_font_color);
+    background-color: var(--accent1);
+    text-decoration: none;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    border: 2px solid var(--primary_higlight_color);
+}
+
+nav a:hover {
+    text-decoration: dashed underline;
+    background-color: var(--accent2);
+    border-color: var(--accent1);
+}
