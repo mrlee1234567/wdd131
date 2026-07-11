@@ -7,6 +7,7 @@
     --accent2: tomato;
     --accent3: #4a412a;
     --secondary_font_color: floralwhite;
+    --secondary_highlight_color: midnightblue;
 }
 
 
@@ -17,6 +18,10 @@
     display: flex;
     margin: 0 auto;
 } */
+
+body {
+    background-color: var(--secondary_highlight_color);
+}
 
 main {
     display: flex;
