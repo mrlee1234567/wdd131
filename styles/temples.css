@@ -37,6 +37,7 @@ main {
     padding: 10px;
     font-family: var(--headings2);
     background-color: var(--accent1);
+    color: var(--secondary_highlight_color);
 }
 
 .images {
@@ -77,6 +78,8 @@ figure {
 
 #menu {
     display: none;
+    background-color: var(--accent3);
+    color: var(--secondary_font_color);
 }
 
 /* .show nav {

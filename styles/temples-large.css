@@ -16,8 +16,6 @@
     #menu {
         display: block;
         text-decoration: none;
-        background-color: var(--accent3);
-        color: var(--secondary_font_color);
         padding: 0.25rem;
         text-align: center;
         font-weight: 600;
