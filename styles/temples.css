@@ -8,6 +8,7 @@
     --accent3: #4a412a;
     --secondary_font_color: floralwhite;
     --secondary_highlight_color: midnightblue;
+    --primary_higlight_color: cadetblue;
 }
 
 
@@ -69,6 +70,7 @@ figure {
 .images figure figcaption {
     text-align: center;
     font-family: var(--body1alt);
+    color: var(--accent2);
 }
 
 
@@ -100,4 +102,8 @@ nav a:hover {
     text-decoration: dashed underline;
     background-color: var(--accent2);
     border-color: var(--accent1);
+}
+
+h1 {
+    background-color: var(--primary_higlight_color);
 }
