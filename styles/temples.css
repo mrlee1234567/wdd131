@@ -1,0 +1,73 @@
+@import "base.css";
+/* i was going to try to do something else, but i did something wrong on my end, then tried this, now im stuck here i guess... it works the same as what i was going to try though. this just seems like a sensible thing */
+/* requirements 1, 2, and 3 are already covered by base.css */
+:root {
+    --base-headings2: "Manufacturing Consent", "Old English Text MT", cursive, serif;
+}
+
+
+    /* max-width: 800px; */
+    /* min-width: auto; */
+    
+    /* justify-content: space-evenly;
+    display: flex;
+    margin: 0 auto;
+} */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: var(--secondary_highlight_color); */
+    padding: 0.5rem;
+    /* border: 2px solid var(--primary_higlight_color); */
+}
+
+.album-header {
+    font-size: 3rem;
+    padding: 10px;
+    font-family: var(--headings2);
+    background-color: var(--accent1);
+}
+
+.images {
+    /* max-width: 1000px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 0.5rem;
+    justify-items: center;
+    width: 1000px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+figure {
+    display: block;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.images figure img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+.images figure figcaption {
+    text-align: center;
+    font-family: var(--body1alt);
+}
+
+
+
+#menu {
+    display: none;
+}
+
+/* .show nav {
+    display: block;
+} */

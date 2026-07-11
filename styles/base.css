@@ -19,6 +19,7 @@
     --accent3: #4a412a;
     /* the signature pantone 448c */
     --fontspecial: "Special Elite", "Lucida Sans Typewriter Regular", monospace;
+    --body1alt: 'Goudy Bookletter 1911', 'Bell MT', serif;
 }
 
 nav {
