@@ -83,7 +83,7 @@ section h2 {
 @media screen and (max-width: 750px) {
     .hero img {
         width: 100%;
-        alt: "Cactus Wren";
+        /* alt: "Cactus Wren"; */
     }
 
     .s1, .s2 {
