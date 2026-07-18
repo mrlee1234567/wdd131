@@ -9,7 +9,7 @@
     --place-secbod-sm: ivory;
 }
 
-body {
+.body {
     background-color: var(--place-bg1);
     color: var(--place-fontcolor1);
 }
@@ -62,7 +62,7 @@ section h2 {
     border: 0;
 }
 
-main {
+.main {
     width: auto;
 }
 
@@ -83,7 +83,7 @@ main {
 @media screen and (max-width: 750px) {
     .hero img {
         width: 100%;
-        
+        alt: "Cactus Wren";
     }
 
     .s1, .s2 {
