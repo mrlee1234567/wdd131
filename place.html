@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- ^^^ for some reason, this pulled an error, idk why -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jared Lee</title>
+    <meta name="description" content="Jared Lee WDD 131 - Dynamic Web Fundamentals Countries Page">
+    <meta name="author" content="Jared Lee | WDD131">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- ^^^ this is to (hopefuly) avoid the debacle that was temples and templte-large -->
+    
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+    <!-- ^^^ theres no guarantee this will work, javascript and i have a tenuous relationship, so putting in two scripts might brick the page. if so, i will do what i did in temples.js and comment out getdates.js -->
+<body>
+    <header>
+        <h1>Arizona</h1>
+    </header>
+    <main>
+        
+        
+        <div class="place-content">
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 750px)" srcset="images/superstition-hero.webp" alt="Superstition Mountains">
+                    <img src="images/cactus-wren-hero.webp" alt="Cactus Wren" width="500px">
+                </picture>
+            </div>
+            <section class="s1">
+                <h2>Data</h2>
+                <p>list go here</p>
+            </section>
+            <section class="s2">
+                <h2>Weather</h2>
+                <div class="large-icon">
+                    <img src="images/weather-icon.svg" alt="Weather" width="100px">
+                </div>
+                <div class="small-icon">
+                    <span>⛅</span>
+                </div>
+                <p><span id="weather"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Jared Lee, Arizona USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
