@@ -35,13 +35,17 @@
 }
 
 .s1 {
-    
     top: 20px;
     left: 20px;
+    text-align: center;
+}
+
+.s1 p {
+    padding: 2px;
+    font-size: 1.2rem;
 }
 
 .s2 {
-    
     bottom: 20px;
     right: 20px;
 }
@@ -67,7 +71,7 @@ section h2 {
 }
 
 .large-icon {
-    display: block;
+    display: none;
 }
 
 .s2 h2::after {
@@ -75,7 +79,7 @@ section h2 {
 }
 
 .small-icon {
-    display: none;
+    display: block;
     font-size: 3rem;
     /* the emoji was way way too small */
 }
@@ -103,11 +107,11 @@ section h2 {
     }
 
     .large-icon {
-        display: none;
+        display: block;
     }
 
     .small-icon {
-        display: block;
+        display: none;
     }
 
     .s2 h2::after {

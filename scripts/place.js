@@ -5,14 +5,16 @@ const windM = 0;
 const windI = 0;
 const windchill = 0;
 function getWindChill () {
-    if ((temperatureC <= 10 && windM > 4.8) || (temperatureF <= 50 && windI > 3)) {
-        return windchill;
-    }
-    else
-    {
-        return 'N/A';
-    }
+    return windchill;
     // there were no instructions on how to do any of this
 };
 
-weather.textContent = getWindChill()
+if ((temperatureC <= 10 && windM > 4.8) || (temperatureF <= 50 && windI > 3)) {
+    weather.textContent = getWindChill();
+}
+else {
+    weather.textContent = 'N/A';
+}
+
+
+

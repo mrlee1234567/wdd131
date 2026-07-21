@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+}
+
+.black {
+    color: ivory;
+    background-color: black;
+    border: none;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: right;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
