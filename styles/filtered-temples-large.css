@@ -1,0 +1,54 @@
+@import "base.css";
+
+@media screen and (max-width: 900px) {
+    /* i dont know why, but media-query-large.css used min-width and worked just fine, but i had to use max-width to get this to work */
+    .images {
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        width: 550px;
+        margin: 0 auto;
+    }
+
+    #menu::before {
+        content: '+';
+    }
+
+    #menu {
+        display: block;
+        text-decoration: none;
+        padding: 0.25rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #menu.show::before {
+        content: 'X';
+    }
+
+    .hnav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .show {
+            display: none;
+            
+        }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* i dont know why, but media-query-large.css used min-width and worked just fine, but i had to use max-width to get this to work */
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    /* #menu::before {
+        content: 'X';
+    }
+    
+    #menu {
+        display: block;
+    } */
+}
