@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary1: darkgreen;
+    --primary2: gold;
+    /* eigengrau: #16161d */
+    --textblack: black;
+    --textgrey: #16161d;
+    --accent1: lightskyblue;
+    --accent2: crimson;
+    --accent3: midnightblue;
+    --accent4: linen;
+
+    --body1: "Goudy Bookletter 1911", "Bell MT", serif;
+    /* --body2: "Parkinsans", "Calibri", "Comic Sans MS", sans-serif; */
+    --head1: "Jim Nightshade", "Lucida Calligraphy", "Brush Script MT", cursive, fantasy, sans-serif;
+    --head2: "Six Caps", "Impact", sans-serif;
+
+    /* fonts: "Goudy Bookletter 1911", "Jim Nightshade", "Six Caps", "Parkinsans" */
+}
+
+body {
+    background-color: var(--primary1);
+}
+
+main {
+    color: var(--textgrey);
+    font-family: var(--body1);
+}
+
+h1, h2 {
+    background-color: var(--primary2);
+    color: var(--textblack);
+}
+
+h1 {
+    font-family: var(--head1);
+}
+
+h2 {
+    font-family: var(--head2);
+}
+
+article {
+    color: var(--textblack);
+    background-color: var(--accent1);
+    font-family: var(--body1);
+    margin: 1.125rem;
+}
+
+article h2 {
+    background-color: var(--accent1);
+}
