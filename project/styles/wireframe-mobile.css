@@ -1,0 +1,15 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.space {
+    margin: 0.5rem;
+}

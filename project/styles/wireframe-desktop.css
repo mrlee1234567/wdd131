@@ -1,0 +1,19 @@
+nav {
+    width: auto;
+    display: flex;
+    /* justify-self: center; */
+    justify-content: space-evenly;
+}
+
+.desktop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    border: 1px solid black;
+}
+
+.space {
+    margin: 0.5rem;
+    width: auto;
+    /* min-width: 50%; */
+}
