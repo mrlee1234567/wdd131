@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- ^^^errors again -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +19,7 @@
     <main>
         <div class="form-block">
             <form method="get" action="review.html">
-                <label>
+                <label for="product">
                     Product Name
                     <select id="product" name="product" required>
                         <option selected disabled value="">Select A Product</option>
@@ -31,44 +32,44 @@
                 </label>
                 <div class="radio-class">
                     <p class="radio-label">Product Rating</p>
-                    <label>
+                    <label for="1">
                         &star;
-                        <input type="radio" id="1" name="rating" required>
+                        <input type="radio" id="1" name="rating" required value="1">
                     </label>
-                    <label>
+                    <label for="2">
                         &star;&star;
-                        <input type="radio" id="2" name="rating" required>
+                        <input type="radio" id="2" name="rating" required value="2">
                     </label>
-                    <label>
+                    <label for="3">
                         &star;&star;&star;
-                        <input type="radio" id="3" name="rating" required>
+                        <input type="radio" id="3" name="rating" required value="3">
                     </label>
-                    <label>
+                    <label for="4">
                         &star;&star;&star;&star;
-                        <input type="radio" id="4" name="rating" required>
+                        <input type="radio" id="4" name="rating" required value="4">
                     </label>
-                    <label>
+                    <label for="5">
                         &star;&star;&star;&star;&star;
-                        <input type="radio" id="5" name="rating" required>
+                        <input type="radio" id="5" name="rating" required value="5">
                     </label>
                 </div>
-                <label class="flexible">
+                <label class="flexible" for="date">
                     <p>Date of Installation</p>
                     <input type="date" id="date" name="date" required>
                 </label>
                 <div class="checkbox-class flexible">
                     <p class="checkbox-label">Useful Features</p>
-                    <label><input type="checkbox" id="uf1" name="uf1" value="uf1">Lorem</label>
-                    <label><input type="checkbox" id="uf2" name="uf2" value="uf2">Ipsum</label>
-                    <label><input type="checkbox" id="uf3" name="uf3" value="uf3">Doler</label>
-                    <label><input type="checkbox" id="uf4" name="uf4" value="uf4">Sit</label>
-                    <label><input type="checkbox" id="uf5" name="uf5" value="uf5">Amet</label>
+                    <label for="uf1"><input type="checkbox" id="uf1" name="uf1" value="uf1">Lorem</label>
+                    <label for="uf2"><input type="checkbox" id="uf2" name="uf2" value="uf2">Ipsum</label>
+                    <label for="uf3"><input type="checkbox" id="uf3" name="uf3" value="uf3">Doler</label>
+                    <label for="uf4"><input type="checkbox" id="uf4" name="uf4" value="uf4">Sit</label>
+                    <label for="uf5"><input type="checkbox" id="uf5" name="uf5" value="uf5">Amet</label>
                 </div>
-                <label class="flexible">
+                <label class="flexible" for="review">
                     <p>Written Review</p>
                     <textarea id="review" name="review" rows="4"></textarea>
                 </label>
-                <label>
+                <label for="name">
                     User Name
                     <input type="text" id="name" name="name">
                 </label>

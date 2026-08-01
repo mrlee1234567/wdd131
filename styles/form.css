@@ -70,3 +70,40 @@ input[type="radio"] {
     padding: 1rem;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 500px) {
+    .radio-class {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-block {
+        max-width: fit-content;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 95%;
+    }
+
+    .checkbox-class {
+        align-items: center;
+        
+    }
+
+    .checkbox-label {
+        width: 100%;
+    }
+
+    .checkbox-class label {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: left;
+        width: 10%;
+    }
+    
+}
