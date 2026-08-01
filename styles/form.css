@@ -102,7 +102,7 @@ input[type="radio"] {
     .checkbox-class label {
         display: grid;
         grid-template-columns: auto auto;
-        align-items: left;
+        /* align-items: left; */
         width: 10%;
     }
     
