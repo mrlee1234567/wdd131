@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Jared Lee WDD 131 - Dynamic Web Fundamentals Form Page">
+    <meta name="author" content="Jared Lee | WDD131">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <p id="reviect"></p>
+    </header>
+    <main>
+        <div class="form-block">
+            <form method="get" action="review.html">
+                <label>
+                    Product Name
+                    <select id="product" name="product" required>
+                        <option selected disabled value="">Select A Product</option>
+                        <option value="lorem">Lorem</option>
+                        <option value="ipsum">Ipsum</option>
+                        <option value="doler">Doler</option>
+                        <option value="sit">Sit</option>
+                        <option value="amet">Amet</option>
+                    </select>
+                </label>
+                <div class="radio-class">
+                    <p class="radio-label">Product Rating</p>
+                    <label>
+                        &star;
+                        <input type="radio" id="1" name="rating" required>
+                    </label>
+                    <label>
+                        &star;&star;
+                        <input type="radio" id="2" name="rating" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;
+                        <input type="radio" id="3" name="rating" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;&star;
+                        <input type="radio" id="4" name="rating" required>
+                    </label>
+                    <label>
+                        &star;&star;&star;&star;&star;
+                        <input type="radio" id="5" name="rating" required>
+                    </label>
+                </div>
+                <label class="flexible">
+                    <p>Date of Installation</p>
+                    <input type="date" id="date" name="date" required>
+                </label>
+                <div class="checkbox-class flexible">
+                    <p class="checkbox-label">Useful Features</p>
+                    <label><input type="checkbox" id="uf1" name="uf1" value="uf1">Lorem</label>
+                    <label><input type="checkbox" id="uf2" name="uf2" value="uf2">Ipsum</label>
+                    <label><input type="checkbox" id="uf3" name="uf3" value="uf3">Doler</label>
+                    <label><input type="checkbox" id="uf4" name="uf4" value="uf4">Sit</label>
+                    <label><input type="checkbox" id="uf5" name="uf5" value="uf5">Amet</label>
+                </div>
+                <label class="flexible">
+                    <p>Written Review</p>
+                    <textarea id="review" name="review" rows="4"></textarea>
+                </label>
+                <label>
+                    User Name
+                    <input type="text" id="name" name="name">
+                </label>
+                <input type="submit" value="Send Review" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Jared Lee, Arizona USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

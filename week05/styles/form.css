@@ -1,0 +1,72 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block {
+    display: block;
+    margin: 0.5rem auto;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--accent2);
+    padding: 1rem;
+    border: 2px double var(--accent1);
+}
+
+
+.radio-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.radio-label {
+    grid-column: 1 / span 5;
+}
+
+.radio-class label{
+    text-align: center;
+    
+}
+
+.radio-class label, .flexible {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .checkbox-class */
+
+.radio-label, .checkbox-label, label p {
+    background-color: var(--accent3);
+    text-align: center;
+    /* padding-bottom: 2px; */
+}
+
+label, input {
+    padding-bottom: 2px;
+}
+
+
+
+input[type="text"],
+input[type="date"] {
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="radio"] {
+    align-self: center;
+}
+
+.review-form p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}

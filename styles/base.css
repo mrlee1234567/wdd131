@@ -136,3 +136,15 @@ footer p {
     font-weight: 700;
     padding: 5px;
 }
+
+p a {
+    text-decoration: double underline;
+    color: inherit;
+    /* font-weight: 900; */
+    
+}
+
+p a:hover {
+    text-decoration-color: var(--accent2);
+    font-weight: 900;
+}
