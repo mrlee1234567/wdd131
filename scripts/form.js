@@ -2,9 +2,9 @@ const currentyear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 const today = new Date();
 const jaar = today.getFullYear();
-const formProduct = document.querySelector("#product") || 0;
+const formProduct = document.querySelector("#product");
 // const submit = document.querySelector("#submit");
-const revct = document.querySelector("#reviect") || 0;
+const revct = document.querySelector("#reviect");
 
 const products = [
     {
@@ -47,13 +47,13 @@ function buildOpts(iary){
         .map(x => x.charAt(0).toUpperCase() + x.substring(1))
         .join(' ')
     ; //i had to find a stack exchange for that, bc for whatever reason, js does not have a capitalize function
-    const av = iary.averagerating.toString();
+    const av = iary.averagerating;
     // op.setAttribute('value',id);
     // op.innerHTML(`${nm} ${av}&star;`);
     op.innerHTML = `${nm} ${av}&star;`;
-    if (formProduct != 0) {
+    // if (formProduct != 0) {
         formProduct.appendChild(op);
-    }
+    // }
     
 };
 
@@ -67,32 +67,32 @@ function getRCount(){
 
 let reviewct = getRCount() || 0;
 
-function setRCount(){
-    rp1 = reviewct + 1;
-    localStorage.setItem('reviewnum',JSON.stringify(rp1));
-};
-if (revct != 0) {
+// function setRCount(){
+//     rp1 = reviewct + 1;
+//     localStorage.setItem('reviewnum',JSON.stringify(rp1));
+// };
+// if (revct != 0) {
     if (reviewct == 0) {
         revct.textContent = 'No Reviews Submitted.';
     } else {
         revct.innerHTML = `There are ${reviewct} reviews.`;
     };
-};
+// };
 
 
 // submit.addEventListener('click',setRCount);
 
-function getCurrentFile() {
-    let url = window.location.href;
-    let objs = url.split("/");
-    return (objs[objs.length - 1]);
-};
+// function getCurrentFile() {
+//     let url = window.location.href;
+//     let objs = url.split("/");
+//     return (objs[objs.length - 1]);
+// };
 //^^^modified from a stack exchange response
 
-let currentFile = getCurrentFile();
+// let currentFile = window.location.href;
 
 // revct.innerHTML = currentFile;
 
-if (currentFile.includes("review.html")){
-    setRCount();
-};
+// if (currentFile.includes("review.html")){
+//     setRCount();
+// };

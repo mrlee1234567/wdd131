@@ -3,6 +3,7 @@
 form {
     display: flex;
     flex-direction: column;
+    color: var(--primary_font_color);
 }
 
 .form-block {
@@ -39,6 +40,7 @@ form {
 
 .radio-label, .checkbox-label, label p {
     background-color: var(--accent3);
+    color: var(--secondary_font_color);
     text-align: center;
     /* padding-bottom: 2px; */
 }
@@ -70,6 +72,16 @@ input[type="radio"] {
     padding: 1rem;
     font-size: 1.5rem;
 }
+
+.reqd {
+    text-decoration: underline;
+    text-decoration-color: var(--primary_font_color);
+}
+
+.radio-label.reqd {
+    text-decoration-color: var(--secondary_font_color);
+}
+
 
 @media screen and (max-width: 500px) {
     .radio-class {
@@ -105,5 +117,12 @@ input[type="radio"] {
         /* align-items: left; */
         width: 10%;
     }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 40px;
+            height: 40px;
+            padding: 0.25rem;
+        }
     
 }

@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/base.css">
     <script defer src="scripts/form.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Manufacturing+Consent&family=Smokum&family=Special+Elite&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -19,19 +26,19 @@
     <main>
         <div class="form-block">
             <form method="get" action="review.html">
-                <label for="product">
-                    Product Name
+                <label for="product" class="reqd">
+                    Product Name*
                     <select id="product" name="product" required>
                         <option selected disabled value="">Select A Product</option>
-                        <option value="lorem">Lorem</option>
+                        <!-- <option value="lorem">Lorem</option>
                         <option value="ipsum">Ipsum</option>
                         <option value="doler">Doler</option>
                         <option value="sit">Sit</option>
-                        <option value="amet">Amet</option>
+                        <option value="amet">Amet</option> -->
                     </select>
                 </label>
                 <div class="radio-class">
-                    <p class="radio-label">Product Rating</p>
+                    <p class="radio-label reqd">Product Rating*</p>
                     <label for="1">
                         &star;
                         <input type="radio" id="1" name="rating" required value="1">
@@ -53,8 +60,8 @@
                         <input type="radio" id="5" name="rating" required value="5">
                     </label>
                 </div>
-                <label class="flexible" for="date">
-                    Date of Installation
+                <label class="flexible reqd" for="date">
+                    Date of Installation*
                     <input type="date" id="date" name="date" required>
                 </label>
                 <div class="checkbox-class flexible">
