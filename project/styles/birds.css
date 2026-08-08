@@ -84,7 +84,7 @@ article p {
 figure {
     justify-self: center;
     align-content: center;
-    background-color: var(--primary1);
+    background-color: var(--accent3);
     padding: 0.5em;
     border: 2px solid var(--primary2);
     color: var(--textgrey);
@@ -92,7 +92,7 @@ figure {
 
 figcaption {
     text-align: center;
-    color: var(--primary2);
+    color: var(--accent4);
 }
 
 img {
