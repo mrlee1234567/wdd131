@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornifacts - Contact</title>
+    <meta name="description" content="Jared Lee WDD 131 - Dynamic Web Fundamentals Project Page - Contact Us">
+    <meta name="author" content="Jared Lee | WDD131">
+    <link rel="stylesheet" href="styles/birds.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Jim+Nightshade&family=Parkinsans:wght@300..800&family=Six+Caps&display=swap"
+        rel="stylesheet">
+    
+    <script defer src="scripts/pagemod.js"></script>
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="menu-btn" id="menu-btn"></a>
+        <nav class="menu hide">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="parrots.html">Parrots</a>
+            <a href="corvids.html">Corvids</a>
+        </nav>
+        <img class="logo" src="images/logo.webp" alt="Ornifacts.com Logo" height="300px" loading="lazy">
+    </header>
+    <main>
+        <h1>Get In Touch!</h1>
+        <p>Sometimes you have questions about birds you don't already know, so we provide this contact to let you ask us about birds!</p>
+        <article>
+            <h2>Contact Us</h2>
+            <form method="get" action="index.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="fname" class="formreq">First Name*<input type="text" id="fname" name="fname" required></label>
+                    <label for="lname">Last Name<input type="text" id="lname" name="lname"></label>
+                    <label for="email" class="formreq">Email*<input type="email" id="email" name="email" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <!-- <div class="radio"> -->
+                        <!-- <span class="radio-span radio-label formreq">Reason for Contact*</span> -->
+                        <!-- <div> -->
+                    <label for="reason" class="formreq">Reason for Contact*
+                        <select id="reason" name="reason" required>
+                            <option selected disabled value="">Select an Option</option>
+                            <option value="q">Question</option>
+                            <option value="f">Site/Service Feedback</option>
+                            <option value="i">Identify a Bird</option>
+                            <option value="b">Submit Your Birdfact</option>
+                            <option value="d">Submit a New Bird of the Day</option>
+                            <option value="o">Other (Specify below if necessary)</option>
+                        </select>
+                    </label>
+                    
+                        <!-- </div> -->
+                        
+                    <label for="r-o-specify">More Information (optional)<input type="text" id="r-o-specify" name="r-o-specify">
+
+                        <!-- <label for="question"><input type="radio" id="question" name="reason" value="q" required>General Question</label>
+                        <label for="feedback"><input type="radio" id="feedback" name="reason" value="f" required>Site/Service Feedback</label>
+                        <label for="identify"><input type="radio" id="identify" name="reason" value="i" required>Identify a Bird</label>
+                        <label for="birdfact"><input type="radio" id="birdfact" name="reason" value="b" required>Submit Your Bird Fact</label>
+                        <label for="botd"><input type="radio" id="botd" name="reason" value="d" required>Submit a New Bird of the Day</label>
+                        <label for="radio-other"><input type="radio" id="radio-other" name="reason" value="o" required>Other (Specify below if necessary)</label> -->
+                        <!-- <span class="radio-span"><label for="r-o-specify">Other<input type="text" id="r-o-specify" name="r-o-specify"></label></span> -->
+                    <!-- </div> -->
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Message Content</legend>
+                    <label for="content"><span  class="formreq">Message*</span><textarea id="content" name="content" rows="5" required></textarea></label>
+                    <label for="pic">Additional Pictures<input type="file" id="pic" name="pic" accept="image/*,video/*" multiple></label>
+                    <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter">Subscribe to Our Newsletter</label>
+                    <label for="anon" class="anon"><input type="checkbox" id="anon" name="anon" value="yes">I would like to omit my identity from this
+                        response (ie, do not save my contact details)</label>
+                </fieldset>
+                <input type="submit" value="Get In Touch" id="submit">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>ornifacts.com <span id="currentyear"></span> Jared Lee, Arizona USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

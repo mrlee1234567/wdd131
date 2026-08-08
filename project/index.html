@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornifacts - The Only Website for Bird People</title>
+    <!-- ornifacts.com -->
+    <meta name="description" content="Jared Lee WDD 131 - Dynamic Web Fundamentals Project Page">
+    <meta name="author" content="Jared Lee | WDD131">
+    <link rel="stylesheet" href="styles/birds.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Jim+Nightshade&family=Parkinsans:wght@300..800&family=Six+Caps&display=swap"
+        rel="stylesheet">
+
+    <script defer src="scripts/birds.js"></script>
+    <script defer src="scripts/pagemod.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="menu-btn" id="menu-btn"></a>
+        <nav class="menu hide">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="parrots.html">Parrots</a>
+            <a href="corvids.html">Corvids</a>
+        </nav>
+        <img class="logo" src="images/logo.webp" alt="Ornifacts.com Logo" height="300px" loading="lazy">
+    </header>
+    <main>
+        <h1>Welcome to Ornifacts!</h1>
+        <img class="page-img" src="images/bald-eagle.jpg" alt="Bald Eagle, Haliaeetus leucocephalus" loading="lazy">
+
+        <div class="content-grid">
+            <article>
+                <h2>About Us</h2>
+                <p>Ornifacts is your one stop shop for all things bird fact related. Here, we offer you only the best facts about the best birds. What is the best birds? That is for us to know and for you to figure out!</p>
+                <p>We also offer consulting for your bird needs. Have a question about a bird or something? We have the answer! And if we don't? Then we still have the answer, because we're that good! Don't believe us? Try for yourself!</p>
+            </article>
+
+            <article id="botd">
+                <h2>Bird of the Day!</h2>
+                <figure>
+                    <img src="images/placeholder.png" alt="bird, his name is icarus" height="100" loading="lazy">
+                    <figcaption>bird to be chosen by javascript. if not, then oops</figcaption>
+                </figure>
+                <p>about this bird, this is placeholder, placeholder will be placeheld</p>
+                <!-- bird of the day should ideally choose a random bird (as in named bird) and give a nonsensical biography, it chooses one every day using local files -->
+            </article>
+
+            <article>
+                <h2>Birdfact!</h2>
+                <p>Birds are interesting, and they have so many facts you wouldn't really think about. Here are some interesting facts you didn't know about birds!</p>
+                <ul id="birdfact">
+                    <li>this is</li>
+                    <li>also a</li>
+                    <li>javascript problem</li>
+                </ul>
+                <!-- facts about birds -->
+            </article>
+
+            <article>
+                <h2>Pigeon</h2>
+                <figure>
+                    <img src="images/rock-pigeon.jpg" alt="Rock Dove" height="150" loading="lazy">
+                    <figcaption>A Rock Dove (<i>Columba livia</i>), the Common Pigeon</figcaption>
+                </figure>
+                <p>Pigeons are found everywhere in urban areas. They have been called "rats with wings" among other things. Indeed, pigeons are an urban niusence. However, pigeons are also very much interesting creatures nonetheless.</p>
+                <p>They have been called dirty and disease ridden, and that is not untrue, but given the chance, pigeons can be very hygenic (at least moreso than their wild appearance would convey). This is partly because pigeons are a partially domesticated animal. Indeed, pigeons have been useful to humans for thousands of years, being used for communication and in some cases for meat.</p>
+                <p>In WWI, messenger pigeons were used by all sides. One such pigeon, Cher Ami, carried a message sent by stranded US Army soldiers stuck behind German lines that read "We are along the road parallel to 276.4. Our own artillery is dropping a barrage directly on us. For heaven's sake, stop it" which allowed them to retreat safely. Cher Ami was awarded the French Croix de Guerre for his service, and his taxedermy is on display at the Smithsonian</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>ornifacts.com <span id="currentyear"></span> Jared Lee, Arizona USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
